@@ -6,14 +6,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="bg-slate-900 grid place-content-center h-screen">
+  <body
+    class="bg-slate-700 grid place-content-center h-screen sm:bg-lime-600 md:bg-slate-900"
+  >
     <h1 class="text-yellow-500 text-4xl m-6 font-bold">Test</h1>
     <div>
-      <div class="p-6 bg-white mx-w-sm mx-auto rounded-md flex items-center space-x-4">
+      <div
+        class="p-6 bg-white mx-w-sm mx-auto rounded-md flex items-center space-x-4"
+      >
         <div>
-          <img class="h-12 w-12"
+          <img
+            class="h-12 w-12"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Physics_wallah_logo.svg/225px-Physics_wallah_logo.svg.png"
-            alt="pw image" 
+            alt="pw image"
           />
         </div>
         <div>
@@ -25,6 +30,54 @@
       </div>
     </div>
 
-    <button class="bg-sky-500 hover:bg-white dark:bg-red-400 text-white hover:text-black text-center mt-2 rounded-xl text-base p-2">Click here</button>
+    <button
+      class="bg-sky-500 hover:bg-white dark:bg-red-400 text-white hover:text-black text-center mt-2 rounded-xl text-base p-2"
+    >
+      Click here
+    </button>
+
+    <!-- Tailwind css is the mobile first approach then desktop first -->
+    <div class="text-center my-4">
+      <p class="text-white sm:text-red-600 md:text-green-600">
+        Lorem, ipsum dolor
+      </p>
+    </div>
+
+    <!-- making of the card -->
+    <div class="mt-3">
+      <div
+        class="max-w-sm mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl"
+      >
+        <div class="md:flex">
+          <div>
+            <img
+              class="h-48 w-full object-cover md:h-full md:w-48"
+              src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+              alt="image"
+            />
+          </div>
+          <div class="p-10">
+            <div
+              class="uppercase tracking-wide font-semibold text-indigo-500 text-sm"
+            >
+              The Awesome Card
+            </div>
+            <a
+              class="block mt-1 text-lg font-medium text-black hover:text-blue-700"
+              href="#"
+              >Tailwind CSS is amazing once you understand the
+              <span class="uppercase bg-yellow-500 p-[2px] px-[14px]"
+                >power</span
+              >
+              it</a
+            >
+            <p class="mt-2 text-slate-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              quae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
